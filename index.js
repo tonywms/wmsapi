@@ -46,7 +46,7 @@ app.get('/dados', async (req, res) => {
 // Rota para consumir a API hospedada no Render
 app.get('/api-remota', async (req, res) => {
   try {
-    const url = "https://api-expert-os.onrender.com/dados";  // Substitua se necessário
+    const url = "https://wmsapi-xk45.onrender.com";  // Substitua se necessário
     const response = await axios.get(url, { timeout: 15000 });  // Aumenta o tempo de espera
     
     if (response.status === 200) {
@@ -63,7 +63,7 @@ app.get('/api-remota', async (req, res) => {
 
 // Função para pingar a API e evitar que hiberne no Render
 const keepAwake = async () => {
-  const url = "https://api-expert-os.onrender.com/dados"; // Substitua pela URL da sua API
+  const url = "https://wmsapi-xk45.onrender.com"; // Substitua pela URL da sua API
   setInterval(async () => {
     try {
       const response = await axios.get(url);
