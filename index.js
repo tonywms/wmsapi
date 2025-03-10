@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000;
 const dbConfig = {
   user: 'sa',
   password: 'L@gtech1100',
-  server: '192.168.30.16', // Endereço do servidor
+  server: '187.18.156.253', // Endereço do servidor
   database: 'EXPERTOS',
   options: {
     encrypt: true, // Caso esteja usando o SQL Server com criptografia
@@ -81,3 +81,9 @@ keepAwake();
 app.listen(port, () => {
   console.log(`Servidor rodando na porta ${port}`);
 });
+
+
+//git status
+//git add .
+//git commit -m "Sua mensagem de commit aqui"
+//git push
